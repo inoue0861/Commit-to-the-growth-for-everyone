@@ -3,7 +3,9 @@
   justify-content: space-between;
   align-items: center;
   height:70px;
-  width:100%
+  width:100%;
+  max-width: 1594px;
+  min-width: 1594px;
 }
 
 .photo-logo img {
@@ -26,6 +28,12 @@ li{
 
 main{
   position: relative;
+}
+
+/*タイトル*/
+
+.commit{
+  max-width: 1594px;
 }
 
 .commit-h1{
@@ -84,6 +92,8 @@ h2{
   font-weight: bold;
 }
 
+/*ニュース*/
+
 .news{
   color: #FF3399;
   font-family: "Regular 400", cursive;
@@ -94,7 +104,7 @@ h2{
 .news-box{
   max-width: 800px;
   width: 90%;
-  margin:100px auto;
+  margin:100px 397px 100px 397px;
 }
 
 .news-content{
@@ -138,10 +148,14 @@ a{
   text-decoration: none;
 }
 
+/*About*/
+
 .about-box{
   background-color: #EEEEEE;
   padding:30px 200px 30px;
   margin:30px;
+  width:100%;
+  max-width: 1150px;
 }
 
 .about-photo{
@@ -177,6 +191,7 @@ h3{
   color: #707070;
 }
 
+/*Service*/
 
 .service-frame{
   width: 70%;
@@ -198,14 +213,26 @@ h3{
 
 .education0-svg{
   background: url(./img/service__first.svg) no-repeat;
-  width: 80%;
+  width: 28%;
   height: 150px;
   margin: auto;
+}
+
+.education-box-contents{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: 10px;
 }
 
 .education0{
   background-size: cover;
   background-color: #FF3399;
+  width: 50%;
+}
+
+.education-box{
+  width: 50%;
 }
 
 .education-contents0{
@@ -216,25 +243,44 @@ h3{
   margin-bottom: 10px;
 }
 
+.education-contents{
+  color: #fff;
+  height: 30px;
+  width: 400px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.education-text1{
+  color: #fff;
+  width: 280px;
+  height: 100px;
+}
+
 .education-text{
   color:#fff;
   width: 80%;
   margin: 0 auto;
 }
 
+
 .education1-svg{
   background: url(./img/service__first.svg) no-repeat;
-  height: 150px;
-  margin: auto;
+  height: 200px;
+  margin:0 ;
+  width: 150px;
 }
 
 .education1{
+  display: flex;
   flex-wrap: wrap;
   height: 50%;
   background-color:#993366;
 }
 
 .education2{
+  display: flex;
+  flex-wrap: wrap;
   height: 50%;
   background-color:#CC99CC;
 }
@@ -242,6 +288,9 @@ h3{
 .service-list{
   height: 400px;
   display: flex;
+  width: 100%;
+  max-width: 1115px;
+  min-width: 1115px;
 }
 
 
@@ -250,10 +299,14 @@ h3{
   flex-wrap: wrap;
 }
 
+/*Blog*/
+
 .blog-frame{
   background-color: #EEEEEE;
   padding:30px;
   margin-top:30px;
+  width: 95%;
+  max-width: 1574px;
 }
 
 .blog{
@@ -328,12 +381,12 @@ h3{
   margin-top:40px ;
 }
 
+/*Company*/
+
 .company-flame{
   width: 70%;
-  margin: 60px ;
-  margin: auto ;
-  margin-top: 60px ;
-  margin-bottom: 60px;
+  max-width: 1157px;
+  margin: 60px 60px 60px 260px ;
 }
 
 .company{
@@ -355,6 +408,7 @@ table{
   border-collapse: collapse;
   width: 70%;
   height: 250px;
+  margin: auto;
 }
 
 th{
@@ -370,8 +424,12 @@ td{
   padding: 20px;
 }
 
+/*Information*/
+
 .information-box{
   height: 350px;
+  width: 100%;
+  max-width: 1594px;
 }
 
 .information-access{
@@ -417,8 +475,12 @@ td{
   margin: 20%;
 }
 
+/*Contact*/
+
 .contact{
   margin-top: 70px;
+  width: 100%;
+  max-width: 1594px;
 }
 
 .contact-interview-text{
@@ -450,19 +512,44 @@ td{
 
 .contact-information{
   color: #fff;
+  margin-top: 15px;
 }
 
 .mail-icon{
-  background-image:url(./img/mailicon1.svg);
-  position:absolute;
-  height: 32px;
+  position:relative;
+  height: 0px;
   width: 32px;
-  background-repeat: no-repeat;
+  display: block;
   background-position: right;
+  fill: #fff;
+  color: #fff;
+}
+
+.mail-icon::before{
+  content: "";
+  background-image:url(./img/mailicon1.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
   fill: #fff;
 }
 
+.arrow-svg{
+  width:64px;
+  height:64px;
+  color: #fff;
+}
+
+/*Copyright*/
+
 .copyright{
+  width: 100%;
+  max-width: 1594px;
   background-color: #EEEEEE;
   line-height:40px;
   margin-top: 70px;
