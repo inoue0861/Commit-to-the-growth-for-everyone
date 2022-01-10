@@ -1,11 +1,15 @@
+*{
+  outline: 1px solid red !important;
+}
+
 .header{
   display:flex;
   justify-content: space-between;
   align-items: center;
   height:70px;
   width:100%;
-  max-width: 1594px;
-  min-width: 1594px;
+  max-width: 1500px;
+  min-width: 1094px;
 }
 
 .photo-logo img {
@@ -18,7 +22,7 @@ ul{
   justify-content: flex-end;
 }
 
-li{
+li.child{
   display:flex;
   flex-direction:row;
   font-weight: 700;
@@ -33,7 +37,7 @@ main{
 /*タイトル*/
 
 .commit{
-  max-width: 1594px;
+  max-width: 1500px;
 }
 
 .commit-h1{
@@ -42,7 +46,7 @@ main{
   left:10%;
 }
 
-h1{
+h1.title-h1{
   color: #FF3399;
   font-family: "Regular 400", cursive;
   font-size:60px;
@@ -58,7 +62,7 @@ h1{
   left:10%;
 }
 
-h2{
+h2.title-h2{
   color: #FF3399;
   font-size: 30px;
   font-weight: bold;
@@ -78,10 +82,9 @@ h2{
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 40%;
+  margin-left: 33%;
   width:1000px;
   height: 700px;
-  background-position:right 80px top 50px;
   z-index: -1;
 }
 
@@ -104,7 +107,7 @@ h2{
 .news-box{
   max-width: 800px;
   width: 90%;
-  margin:100px 397px 100px 397px;
+  margin:100px 397px 100px 350px;
 }
 
 .news-content{
@@ -153,7 +156,6 @@ a{
 .about-box{
   background-color: #EEEEEE;
   padding:30px 200px 30px;
-  margin:30px;
   width:100%;
   max-width: 1150px;
 }
@@ -183,7 +185,7 @@ a{
   margin-top:20px;
 }
 
-h3{
+h3.title-h3{
   text-align:center;
   font-weight: bold;
   font-size: 30px;
@@ -195,7 +197,8 @@ h3{
 
 .service-frame{
   width: 70%;
-  margin:150px 0px 100px 250px;
+  margin:150px 0px 100px 200px;
+  max-width: 1115px;
 }
 
 .service{
@@ -305,8 +308,8 @@ h3{
   background-color: #EEEEEE;
   padding:30px;
   margin-top:30px;
-  width: 95%;
-  max-width: 1574px;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .blog{
@@ -336,7 +339,7 @@ h3{
 }
 
 .blog-photo{
-  background-image: url(./20211207_task/img/blog__first.jpg);
+  background-image: url(./img/blog__first.jpg);
   background-size: cover;
   height:250px;
   border-radius: 20px 20px 0px 0px;
@@ -386,7 +389,7 @@ h3{
 .company-flame{
   width: 70%;
   max-width: 1157px;
-  margin: 60px 60px 60px 260px ;
+  margin: 60px 60px 60px 210px ;
 }
 
 .company{
